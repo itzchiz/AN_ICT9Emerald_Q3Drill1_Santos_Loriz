@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic Calculator Display</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #fa86c4;}
+
+        .container {
+            background-color: #ffffff;
+            padding: 35px;
+            border-radius: 20px;
+            width: 500px;
+            max-width: 90%;
+            color: #f062a6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;}
+
+        .title-container {
+            background-color: #ffe3f0;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            width: 100%;
+            text-align: center;}
+
+        .calculator {
+            width: 100%;
+            text-align: center;}
+    </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+        <div class="title-container">
+            <h2>Basic Calculator Display</h2>
+        </div>
+
+     <div class="calculator" id="output">
+     </div>
+
+  </div>
+
+    <script>
+        let num1 = 5;
+        let num2 = 11;
+
+        let sum = num1 + num2;
+        let difference = num1 - num2;
+        let product = num1 * num2;
+        let quotient = num1 / num2;
+
+        document.getElementById("output").innerHTML =
+            "<strong>Addition</strong><br>" + num1 + " + " + num2 + " = " + sum +
+            "<br><br><strong>Subtraction</strong><br>" + num1 + " - " + num2 + " = " + difference +
+            "<br><br><strong>Multiplication</strong><br>" + num1 + " * " + num2 + " = " + product +
+            "<br><br><strong>Division</strong><br>" + num1 + " / " + num2 + " = " + quotient;
+    </script>
+
+</body>
+</html>
